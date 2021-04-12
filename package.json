@@ -1,0 +1,53 @@
+{
+  "name": "monitorbot-statuspage",
+  "version": "0.0.0",
+  "description": "Status page for Monitorbot",
+  "author": {
+    "name": "Iñigo Ochoa",
+    "email": "contact@inigochoa.me",
+    "url": "https://inigochoa.me/"
+  },
+  "repository": "https://github.com/inigochoa/monitorbot-statuspage",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
+    "core-js": "^3.6.5",
+    "firebase": "^8.3.1",
+    "postcss": "^7",
+    "register-service-worker": "^1.7.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.22.3",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "cypress": "^7.0.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "standard-version": "^9.1.1",
+    "tailwindcss-debug-screens": "^2.0.0",
+    "vue-cli-plugin-i18n": "~2.0.2",
+    "vue-cli-plugin-tailwind": "~2.0.6",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "scripts": {
+    "build": "vue-cli-service build",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "git:authors": "echo '# Authors\n' > AUTHORS.md && git log --raw | grep '^Author: ' | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> AUTHORS.md",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
+    "rel": "standard-version",
+    "rel:major": "standard-version --release-as major",
+    "rel:minor": "standard-version --release-as minor",
+    "rel:patch": "standard-version --release-as patch",
+    "serve": "vue-cli-service serve"
+  }
+}

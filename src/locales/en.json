@@ -1,0 +1,35 @@
+{
+  "message": "hello i18n !!",
+  "status": {
+    "success": "<span class=\"text-success\">Operational ({status})</span>",
+    "danger": "<span class=\"text-danger\">Down ({status})</span>",
+    "percentage": "{percentage}% uptime"
+  },
+  "summary": {
+    "success": "All systems are <span class=\"text-success\">operational</span>",
+    "warning": "Some systems are <span class=\"text-warning\">down</span>",
+    "danger": "All systems are <span class=\"text-danger\">down</span>"
+  },
+  "heading": {
+    "systems": "Systems"
+  },
+  "error": {
+    "empty": "We could not find any system. Remember that you can add new systems at any time using your own Telegram bot."
+  },
+  "meta": {
+    "home": {
+      "title": {
+        "clear": "Index",
+        "errors": "({count}) Index"
+      },
+      "description": "Monitorbot status page"
+    },
+    "template": {
+      "title": "%s - Monitorbot"
+    }
+  },
+  "scroll-top": {
+    "title": "Scroll to the top of the page",
+    "alt": "Up arrow"
+  }
+}
