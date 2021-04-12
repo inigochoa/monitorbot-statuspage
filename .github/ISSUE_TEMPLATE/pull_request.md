@@ -1,7 +1,7 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
+name: Pull Request
+about: New pull request
+title: "[DATE]: [SHORT DESCRIPTION]"
 labels: ''
 assignees: inigochoa
 ---
