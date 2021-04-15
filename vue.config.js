@@ -13,4 +13,20 @@ module.exports = {
       enableInSFC: false
     },
   },
+
+  pwa: {
+    manifestOptions: {
+      background_color: '#FFFFFF',
+      description: 'Status page of systems managed by Monitorbot',
+      display: 'standalone',
+      lang: 'en',
+      orientation: 'any',
+      short_name: 'MB',
+      start_url: '.',
+      theme_color: '#FFFFFF',
+    },
+    msTileColor: '#FFFFFF',
+    name: 'Monitorbot',
+    themeColor: '#FFFFFF',
+  },
 }
